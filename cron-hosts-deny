@@ -1,5 +1,5 @@
 #!/bin/bash
 
-/home/name/deny.pl > /home/name/host-deny-ips..txt
+/home/name/deny.pl > /home/name/host-deny-ips.txt
 
-cp /name/host-deny-ips.txt /etc/hosts.deny
+cp /home/name/host-deny-ips.txt /etc/hosts.deny
