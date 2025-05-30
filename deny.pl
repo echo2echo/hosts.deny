@@ -4,8 +4,6 @@ use warnings;
 use strict;
 use diagnostics;
 
-
-##
 # Usage: $ perl ./deny.pl > /etc/hosts.deny
 # Or use with $ sudo ./deny.bash
 
