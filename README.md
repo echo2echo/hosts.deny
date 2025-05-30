@@ -7,3 +7,5 @@ The requirements to run this script are a linux distribution. Perl installed & j
 This script uses the /etc/hosts.deny file to block IP addresses.  
 ### Make sure you put your home & work IP addresses in the /etc/hosts.allow file to allow you access to ssh on your server
 It is possible to get locked out of your server if your own IP addresses are not in the hosts.allow file.  
+
+See line 94 of deny.pl and change he IP Address to your home & work addresses
