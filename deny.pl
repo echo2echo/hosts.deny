@@ -89,9 +89,8 @@ foreach my $item (@deny_array)
 
 foreach (@deny_array) {
 
-	# Skip addresses so as to not get locked out
-	if ( $_ =~ m/73\.163\.126\.228/ ) { next; }
-	if ( $_ =~ m/76\.110\.221\.46/ )  { next; }
+	# Skip addresses so as to not get locked out.  123.123.123.123 used below
+	if ( $_ =~ m/123\.123\.123\.123/ ) { next; }
 	print "ALL: $_\n";	
 
 }
