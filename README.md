@@ -1,4 +1,4 @@
-# hosts.deny
+;# hosts.deny
 
 The deny.pl script creates a list of IP Addresses to be used in the /etc/hosts.deny file in the Ubuntu and Debian based Linux distributions.
 
@@ -17,4 +17,4 @@ Enter cron entries as root as follows to update /etc/hosts.deny file every 30 se
         
 To see the number of IPs blocked check occasionally...
 
-      $ wc -l /erc/hosts.deny
+      $ wc -l /etc/hosts.deny
