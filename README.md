@@ -9,8 +9,8 @@ This script uses the /etc/hosts.deny file to block IP addresses.v
 It is very possible to get locked out of your server if your own IP addresses are not in the hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. 
 
 See line 93 of deny.pl and change the IP Address to your home & work addresses
-Add the following on line to skip adding your personal IPs to /etc/hosts.deny file
-Below references IP address 123.321.123.321... Backslash dot \. within IP address 
+Add the following on line to skip over adding your personal & work IPs to /etc/hosts.deny file
+Below references IP address 123.321.123.321... Backslash dot used within IP address 
 
       if ( $_ =~ m/123\.321\.123\.321/ ) { next; }
 
