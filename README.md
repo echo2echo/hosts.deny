@@ -7,7 +7,7 @@ The requirements to run this script are a Linux distribution, Perl installed & j
 
 This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
 ### Before running scripts make sure you put your home & work public IP addresses in the /etc/hosts.allow file to allow you access to ssh on your server
-It is very possible to get locked out of your server if your own IP addresses are not in the hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. 
+It is very possible to get locked out of your server if your own IP addresses are not in the /etc/hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. 
 
 See line 93 of deny.pl and change the IP Address to your home & work addresses
 Add the following additional line near bottom of deny.pl script to skip over adding your personal & work IPs to /etc/hosts.deny file.
