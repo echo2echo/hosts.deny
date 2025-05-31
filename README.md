@@ -10,7 +10,7 @@ It is very possible to get locked out of your server if your own IP addresses ar
 
 See line 93 of deny.pl and change the IP Address to your home & work addresses
 Add the following on line to skip adding your personal IPs to /etc/hosts.deny file
-Below references IP address 123.321.123.321... Backslash dot (\.) within IP address 
+Below references IP address 123.321.123.321... Backslash dot \. within IP address 
 
       if ( $_ =~ m/123\.321\.123\.321/ ) { next; }
 
