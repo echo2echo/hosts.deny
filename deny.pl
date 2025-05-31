@@ -5,7 +5,7 @@ use strict;
 use diagnostics;
 
 # Usage: $ perl ./deny.pl > /etc/hosts.deny
-# Or use with $ sudo ./deny.bash
+# Or use with $ sudo ./cron-hosts-deny.bash
 
 my @ip = `sudo journalctl -n 2999 --no-pager`;
 my %uniq;
