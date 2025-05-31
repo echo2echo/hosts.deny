@@ -15,6 +15,6 @@ Enter cron entries as root as follows to update /etc/hosts.deny file every 30 se
     * * * * * /home/user/cron-hosts-deny.bash
     * * * * * sleep 30; /home/name/cron-hosts-deny.bash 
         
-To see the number of IPs blocked check occasionally...
+To see the number of IPs blocked check occasionally with...
 
       $ wc -l /etc/hosts.deny
