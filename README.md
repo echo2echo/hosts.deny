@@ -1,7 +1,7 @@
 # hosts.deny
 
 The deny.pl script creates a list of IP Addresses to block questionable ssh connections based on log entries, with IPs entered in the /etc/hosts.deny file in Ubuntu and Debian based Linux distributions.
-Google AI says Fedora, Mint and Arch Linux should also work having journalctl included in OS and use TCP Wrappers.
+Google AI says Fedora, Mint and Arch Linux should also work having journalctl included in OS and use of TCP Wrappers.
 
 The requirements to run this script are a Linux distribution, Perl installed & journalctl, a log monitoring app.
 
