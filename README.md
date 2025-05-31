@@ -21,7 +21,7 @@ Below references IP address 120.121.123.124 (ficticious example ip)... "Backslas
      if ( $_ =~ m/120\.121\.123\.124/ ) { next; }
  
 
-The cron-hosts-deny.bash file is used for staging /etc/hosts.deny additions and creates a backup of hosts.deny for securing your IP Address Block assetts.
+The cron-hosts-deny.bash file is used for staging /etc/hosts.deny additions and creates a backup of hosts.deny for securing your IP address assetts.
 Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run as root. sudo is required by journalctl.
 
     * * * * * /home/username/cron-hosts-deny.bash
