@@ -1,4 +1,4 @@
-# hosts.deny
+u# hosts.deny
 
 The deny.pl script creates a list of IP Addresses to block questionable ssh connections based on log entries, with IPs entered in the /etc/hosts.deny file in Ubuntu and Debian based Linux distributions.
 Google AI says Fedora, Mint and Arch Linux should also work having journalctl included in OS and use TCP Wrappers.
@@ -10,11 +10,11 @@ This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.
 It is very possible to get locked out of your server if your own IP addresses are not in the hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. 
 
 See line 93 of deny.pl and change the IP Address to your home & work addresses
-Add the following additional line near bottom of deny.pl script to skip over adding your personal & work IPs to /etc/hosts.deny file
-Below references IP address 120.121.123.124 (example ip)... Backslash dot used within IP address. 
+Add the following additional line near bottom of deny.pl script to skip over adding your personal & work IPs to /etc/hosts.deny file.
+Below references IP address 120.121.123.124 (ficticious example ip)... "Backslash dot" used within IP address. 
  
       if ( $_ =~ m/120\.121\.123\.124/ ) { next; }
-
+ 
 Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run as root. sudo is required by journalctl.
 
     * * * * * /home/username/cron-hosts-deny.bash
