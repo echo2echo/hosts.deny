@@ -11,8 +11,10 @@ It is possible to get locked out of your server if your own IP addresses are not
 See line 94 of deny.pl and change the IP Address to your home & work addresses
 
 Enter cron entries as root as follows to update every 30 seconds
+
     * * * * * /home/user/cron-hosts-deny.bash
     * * * * * sleep 30; /home/name/cron-hosts-deny.bash 
         
 To see the number of IPs blocked check occasionally
-  $ wc -l /erc/hosts.deny
+
+   $ wc -l /erc/hosts.deny
