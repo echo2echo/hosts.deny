@@ -9,3 +9,10 @@ This script uses the /etc/hosts.deny file to block IP addresses.
 It is possible to get locked out of your server if your own IP addresses are not in the hosts.allow file.  
 
 See line 94 of deny.pl and change the IP Address to your home & work addresses
+
+Enter cron entries as root as follows to update every 30 seconds
+  * * * * * /home/user/cron-hosts-deny.bash
+  * * * * * sleep 30; /home/name/cron-hosts-deny.bash 
+        
+To see the number of IPs blocked check occasionally
+  $ wc -l /erc/hosts.deny
