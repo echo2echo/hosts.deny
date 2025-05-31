@@ -1,4 +1,4 @@
-u# hosts.deny
+pu# hosts.deny
 
 The deny.pl script creates a list of IP Addresses to block questionable ssh connections based on log entries, with IPs entered in the /etc/hosts.deny file in Ubuntu and Debian based Linux distributions.
 Google AI says Fedora, Mint and Arch Linux should also work having journalctl included in OS and use TCP Wrappers.
@@ -24,3 +24,6 @@ To see the number of unique IPs blocked check occasionally with...
 
       $ wc -l /etc/hosts.deny
 
+That's it.  No need to restart network as /etc/hosts.deny and /etc/hosts.allow file are active on being populated.
+This script is useful in combination with firewalls and give more control over ssh traffic, though not httpd and smtpd services for example.
+It is recommended to use firewalls in combnation with /etc/hosts.deny & /etc/hosts.allow files. 
