@@ -32,7 +32,7 @@ To see the number of unique IPs blocked check occasionally with...
       $ wc -l /etc/hosts.deny
 
 That's it.  No need to restart network as /etc/hosts.deny and /etc/hosts.allow file are active on being populated.
-This script is useful in combination with firewalls and give more control over ssh traffic, though not httpd and smtpd services for example as they d not use TCP Wrappers.
+This script is useful in combination with firewalls and gives more control over ssh traffic, though not httpd and smtpd services for example as they do not use TCP Wrappers.
 It is recommended to use firewalls in combnation with /etc/hosts.deny & /etc/hosts.allow files. 
 
 Be careful out there!
