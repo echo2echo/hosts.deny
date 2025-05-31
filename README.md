@@ -6,7 +6,7 @@ Google AI says Fedora, Mint and Arch Linux should also work having journalctl in
 The requirements to run this script are a Linux distribution, Perl installed & journalctl, a log monitoring app.
 
 This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
-### Before running these scripts make sure you put your home, work & any other needed public IP addresses in the /etc/hosts.allow file to allow you access to ssh on your i
+### Before running these scripts make sure you put your home, work & any other needed public IP addresses in the /etc/hosts.allow file to allow you access to ssh on your server
 It is very possible to get locked out of your server if your own IP addresses are not in the /etc/hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. Only one failed password attempt is allowed 
 before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  The suggested cron interval is 30 seconds to update hosts.deny. 
 
@@ -30,5 +30,7 @@ To see the number of unique IPs blocked check occasionally with...
       $ wc -l /etc/hosts.deny
 
 That's it.  No need to restart network as /etc/hosts.deny and /etc/hosts.allow file are active on being populated.
-This script is useful in combination with firewalls and give more control over ssh traffic, though not httpd and smtpd services for example.
+This script is useful in combination with firewalls and give more control over ssh traffic, though not httpd and smtpd services for example as they d not use TCP Wrappers.
 It is recommended to use firewalls in combnation with /etc/hosts.deny & /etc/hosts.allow files. 
+
+Be careful out there!
