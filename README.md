@@ -10,10 +10,10 @@ This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.
 It is very possible to get locked out of your server if your own IP addresses are not in the hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. 
 
 See line 93 of deny.pl and change the IP Address to your home & work addresses
-Add the following on line near bottom of deny.pl script to skip over adding your personal & work IPs to /etc/hosts.deny file
-Below references IP address 123.321.123.321... Backslash dot used within IP address 
-
-      if ( $_ =~ m/123\.321\.123\.321/ ) { next; }
+Add the following additional line near bottom of deny.pl script to skip over adding your personal & work IPs to /etc/hosts.deny file
+Below references IP address 120.121.123.124 (example ip)... Backslash dot used within IP address. 
+ 
+      if ( $_ =~ m/120\.121\.123\.124/ ) { next; }
 
 Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run as root. sudo is required by journalctl.
 
