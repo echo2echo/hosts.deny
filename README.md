@@ -10,7 +10,7 @@ This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.
 It is very possible to get locked out of your server if your own IP addresses are not in the /etc/hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. Only one failed password attempt is allowed 
 before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  The suggested cron interval is 30 seconds to update hosts.deny. 
 
-Use the following example's syntax to enter your own /etc/hosts.allow & /etc/hosts.deny records...
+Use the following example's syntax to enter your own /etc/hosts.allow & /etc/hosts.deny records one at a time...
 
     ALL: 123.123.123.123
 
