@@ -1,8 +1,8 @@
 # hosts.deny
 
-The deny.pl script creates a list of IP Addresses to block questionable ssh & ftp connections (and other services) based on log entries, when IPs are entered into the /etc/hosts.deny file in Ubuntu and Debian based Linux distributions.
+The deny.pl script creates a list of IP Addresses to block questionable ssh & ftp connections (and other services) based on log entries. IP blocking is activated upon entry into the /etc/hosts.deny file in Ubuntu and Debian based Linux distributions.
 Google AI says Fedora, Mint and Arch Linux should also work having journalctl included in their OS and their use of TCP Wrappers.
- 
+
 The requirements to run this script are a Linux distribution, Perl installed & journalctl, a log monitoring app.
 
 This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
