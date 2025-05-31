@@ -91,7 +91,7 @@ foreach (@deny_array) {
 
 	# Skip addresses so as to not get locked out.  123.123.123.123 used below
 	if ( $_ =~ m/123\.123\.123\.123/ ) { next; }
- 	# Add copy of previous line with IP additional address changes directly above this line to skip over adding to /etc/hosts.deny file.
+ 	# Add copy of previous line with IP additional address changes directly above this line to skip over adding home & work IP addresses to /etc/hosts.deny file.
 	print "ALL: $_\n";	
 
 }
