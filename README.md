@@ -18,7 +18,7 @@ Below references IP address 123.321.123.321... Backslash dot used within IP addr
 Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run as root.
 
     * * * * * /home/user/cron-hosts-deny.bash
-    * * * * * sleep 30; /home/name/cron-hosts-deny.bash 
+    * * * * * sleep 30; /home/user/cron-hosts-deny.bash 
 
 To see the number of unique IPs blocked check occasionally with...
 
