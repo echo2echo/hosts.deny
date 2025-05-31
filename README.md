@@ -15,7 +15,7 @@ Below references IP address 123.321.123.321... Backslash dot used within IP addr
 
       if ( $_ =~ m/123\.321\.123\.321/ ) { next; }
 
-Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run as root.
+Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run as root. sudo is required by journalctl.
 
     * * * * * /home/username/cron-hosts-deny.bash
     * * * * * sleep 30; /home/username/cron-hosts-deny.bash 
