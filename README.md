@@ -5,7 +5,7 @@ Google AI says Fedora, Mint and Arch Linux should also work.
 
 The requirements to run this script are a Linux distribution, Perl installed & journalctl, a log monitoring app.
 
-This script uses the /etc/hosts.deny file to block IP addresses.
+This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
 ### Before running scripts make sure you put your home & work public IP addresses in the /etc/hosts.allow file to allow you access to ssh on your server
 It is very possible to get locked out of your server if your own IP addresses are not in the hosts.allow file.  Mobile phone IPs are blocked if an /etc/hosts.allow entry is not posted. 
 
