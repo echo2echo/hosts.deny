@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-u
+
 use warnings;
 use strict;
 use diagnostics;
