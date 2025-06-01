@@ -8,7 +8,7 @@ The requirements to run this script are a Linux distribution, Perl installed & j
 This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
 ### Before running these scripts make sure you put your home, work & any other needed public IP addresses in the /etc/hosts.allow file to allow you access to ssh and bypass hosts.deny on your server.
 It is very possible to get locked out of your server if your own IP addresses are not in the /etc/hosts.allow file.  Mobile phone IPs can be blocked on one failed attempt to login if an /etc/hosts.allow entry is not posted. Only one failed password attempt is allowed 
-before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  My suggested cron interval is 30 seconds to update hosts.deny. 
+before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  My suggested cron interval is 30 seconds to update hosts.deny. You could change the interval to 5 minutes or more. 
 
 Use the following example's syntax to enter your own /etc/hosts.allow & /etc/hosts.deny records one at a time...
 
