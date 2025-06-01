@@ -4,5 +4,5 @@
 
 cp /home/username/host-deny-ips.txt /etc/hosts.deny
 
-# Backup hosts.deny recoreds
+# Backup hosts.deny records
 cp /home/username/host-deny-ips.txt /home/username/hosts.deny.backup.txt
