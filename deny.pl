@@ -27,7 +27,8 @@ foreach $item (@ip) {
 
 	if ($item =~ m/Disconnected from invalid user .* (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
-	if ($item =~ m/Connection closed by (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
+	# Commented below... Over zealous
+	# if ($item =~ m/Connection closed by (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
 	if ($item =~ m/Invalid user .* from (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
