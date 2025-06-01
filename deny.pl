@@ -7,6 +7,7 @@ use diagnostics;
 # Usage: $ sudo ./deny.pl > /etc/hosts.deny
 # Or use with $ sudo ./cron-hosts-deny.bash
 
+# Read latest 3000 lines in logs
 my @ip = `sudo journalctl -n 2999 --no-pager`;
 my %uniq;
 my $item;
