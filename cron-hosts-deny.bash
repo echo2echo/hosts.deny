@@ -10,3 +10,8 @@ cp /home/username/deny/host-deny-ips.txt /etc/hosts.deny
 now=`date +"%Y-%m-%d"`
 now="backup-hosts-deny-${now}"
 cp /home/username/deny/host-deny-ips.txt /home/username/deny/${now}
+
+# Backup hosts.allow
+now=`date +"%Y-%m-%d"`
+now="backup-hosts-allow-${now}"
+cp /etc/hosts.allow /home/username/deny/${now}
