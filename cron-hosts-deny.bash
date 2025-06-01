@@ -1,8 +1,10 @@
 #!/bin/bash
 
-/home/username/deny.pl > /home/username/host-deny-ips.txt
+/home/username/deny.pl > /home/username/deny/host-deny-ips.txt
+cp /home/username/deny/host-deny-ips.txt /etc/hosts.deny
 
-cp /home/username/host-deny-ips.txt /etc/hosts.deny
 
 # Backup hosts.deny records
-cp /home/username/host-deny-ips.txt /home/username/hosts.deny.backup.txt
+now=`date +"%Y-%m-%d"`
+now="backup-hosts-deny-${now}"
+cp /home/username/deny/host-deny-ips.txt /home/username/deny/${now}
