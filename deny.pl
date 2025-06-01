@@ -13,9 +13,6 @@ my $item;
 my @array;
 
 # log records as examples
-# Mar 17 18:54:12 joelrader.net postfix/smtpd[19862]: disconnect from unknown[80.94.95.228] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
-# Mar 19 13:26:44 joelrader.net sshd[29106]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.63.25.13
-# Connection closed by invalid user  8.220.136.105
 # Apr 19 23:38:43 debian sshd[763193]: Received disconnect from 8.213.197.49 port 58040:11: Bye Bye [preauth]
 # Apr 19 23:59:59 debian sshd[764198]: Invalid user httpd from 175.206.1.60 port 46423
 # Apr 19 23:03:12 debian sshd[761621]: Connection closed by 104.234.115.74 port 53734 [preauth]
