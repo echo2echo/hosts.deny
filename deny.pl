@@ -86,10 +86,10 @@ foreach my $item (@deny_array)
 
 foreach (@deny_array) {
 
-	# Skip addresses so as to not get locked out.  123.123.123.123 used below
+	# Skip addresses so as to not get locked out.  123.123.123.123 used below. Make changes as necessary.
 	if ( $_ =~ m/123\.123\.123\.123/ ) { next; }
  	# if ( $_ =~ m/123\.123\.123\.123/ ) { next; }
-  	# Uncomment and edit previous line's IP address changes to skip or remove a public IP address from being added to the /etc/hosts.deny file.
+  	# Uncomment and edit previous line's IP address to skip over or remove a public IP address from being added to the /etc/hosts.deny file.
 	print "ALL: $_\n";	
 
 }
