@@ -12,7 +12,7 @@ my %uniq;
 my $item;
 my @array;
 
-# log records as examples
+# Some log records as examples
 # Apr 19 23:38:43 debian sshd[763193]: Received disconnect from 8.213.197.49 port 58040:11: Bye Bye [preauth]
 # Apr 19 23:59:59 debian sshd[764198]: Invalid user httpd from 175.206.1.60 port 46423
 # Apr 19 23:03:12 debian sshd[761621]: Connection closed by 104.234.115.74 port 53734 [preauth]
