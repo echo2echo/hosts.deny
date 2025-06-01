@@ -1,6 +1,7 @@
 #!/bin/bash
 
-/home/username/deny.pl > /home/username/deny/host-deny-ips.txt
+# Change paths to local settings
+/home/username/deny/deny.pl > /home/username/deny/host-deny-ips.txt
 cp /home/username/deny/host-deny-ips.txt /etc/hosts.deny
 
 
