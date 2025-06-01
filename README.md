@@ -8,14 +8,6 @@ The requirements to run this script are a Linux distribution, Perl installed & j
 This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
 IPs are harvested from journalctl log entries on Linux.
 
-The systemd project (which includes journalctl) is licensed under the GNU Lesser General Public License version 2.1 (LGPLv2.1)
-
-Linux is a trademark of Linus Torvalds. 
-
-Perl is a copyright of Larry Wall and may be copied only under the terms of either the Artistic License or the GNU General Public License, which may be found in the Perl 5 source kit.
-
-The Perl script on this site, deny.pl, is Open Source Software, Copyleft.
-
 ### Before running these scripts make sure you put your home, work & any other needed public IP addresses in the /etc/hosts.allow file to allow you access to ssh and bypass hosts.deny on your server.
 It is very possible to get locked out of your server if your own IP addresses are not in the /etc/hosts.allow file.  Mobile phone IPs can be blocked on one failed attempt to login if an /etc/hosts.allow entry is not posted. Only one failed password attempt is allowed 
 before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  My suggested cron interval is 30 seconds to update hosts.deny. You could change the interval to 5 minutes or more. 
@@ -47,3 +39,16 @@ This script is useful in combination with firewalls and gives more control over 
 It is recommended to use firewalls in combination with /etc/hosts.deny & /etc/hosts.allow files. 
 
 Be careful out there!
+
+
+
+
+
+
+The systemd project (which includes journalctl) is licensed under the GNU Lesser General Public License version 2.1 (LGPLv2.1)
+
+Linux is a trademark of Linus Torvalds.
+
+Perl is a Copyright of Larry Wall and may be copied only under the terms of either the Artistic License or the GNU General Public License, which may be found in the Perl 5 source kit.
+
+The Perl script on this site, deny.pl, is Open Source Software, Copyleft.
