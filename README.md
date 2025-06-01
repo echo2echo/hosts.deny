@@ -34,6 +34,6 @@ To see the number of unique IPs blocked check occasionally with...
 
 That's it.  No need to restart network as /etc/hosts.deny and /etc/hosts.allow file are active on being populated.
 This script is useful in combination with firewalls and gives more control over ssh traffic, though not httpd and smtpd services for example as they do not use TCP Wrappers.
-It is recommended to use firewalls in combnation with /etc/hosts.deny & /etc/hosts.allow files. 
+It is recommended to use firewalls in combination with /etc/hosts.deny & /etc/hosts.allow files. 
 
 Be careful out there!
