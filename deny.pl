@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-
+u
 use warnings;
 use strict;
 use diagnostics;
@@ -7,7 +7,7 @@ use diagnostics;
 # Usage: $ sudo ./deny.pl > /etc/hosts.deny
 # Or use with $ sudo ./cron-hosts-deny.bash
 
-# Read latest 3000 lines in logs
+# Check latest 3000 lines in logs
 my @ip = `sudo journalctl -n 2999 --no-pager`;
 my %uniq;
 my $item;
@@ -33,8 +33,8 @@ foreach $item (@ip) {
 
 	if ($item =~ m/Received disconnect from (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
- 	# Commented below to avoid being accidentlally locked out 
- 	# if ($item =~ m/Failed password.*(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
+ 	# Commented below to avoid being accidentlally locked out with single incorurect password 
+  	# if ($item =~ m/Failed password.*(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 	
 	if ($item =~ m/invalid user\s+(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
