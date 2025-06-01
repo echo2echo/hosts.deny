@@ -1,7 +1,7 @@
 # hosts.deny
 
 The deny.pl script creates a list of IP Address records  to block questionable ssh & ftp connections ( among others ) based on log entries. IP blocking is activated upon entry of a record into the /etc/hosts.deny file.
-The deny.pl perl script is used to merge, purge & sort IP addresses to block.
+The deny.pl perl script is used to merge, purge & sort IP addresses to be blocked.
 
 The Ubuntu and Debian based Linux distributions are supported.
 The requirements to run this script are a Linux distribution with tcp wrapper, Perl installed & journalctl, a log monitoring app.
