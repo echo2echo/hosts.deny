@@ -14,7 +14,7 @@ Use the following example's syntax to enter your own /etc/hosts.allow & /etc/hos
 
     ALL: 123.123.123.123
 
-See line 93 of deny.pl and change the IP Address to your home & work addresses
+See line 90 of deny.pl and change the IP Address to your home & work addresses
 Add the following additional line near bottom of deny.pl script to skip over adding your personal & work IPs to /etc/hosts.deny file.
 The code below references IP address 120.121.123.124 ( ficticious example IP )... "Backslash dot" used within IP address. 
 
