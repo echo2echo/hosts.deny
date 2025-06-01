@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+u#!/usr/bin/env perl
 
 use warnings;
 use strict;
@@ -32,7 +32,7 @@ foreach $item (@ip) {
 
 	if ($item =~ m/Received disconnect from (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 	
-	if ($item =~ m/Failed password.*(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
+	# if ($item =~ m/Failed password.*(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 	
 	if ($item =~ m/invalid user\s+(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
