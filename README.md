@@ -1,4 +1,4 @@
-i# hosts.deny
+-i# hosts.deny
 
 The deny.pl script creates a list of IP Addresses to block questionable ssh & ftp connections (and other services) based on log entries. IP blocking is activated upon entry of a record into the /etc/hosts.deny file. The Ubuntu and Debian based Linux distributions are supported.
 Google AI says Fedora, Mint and Arch Linux should also work having journalctl included in their OS and their use of TCP Wrappers.
@@ -22,7 +22,7 @@ Below references IP address 120.121.123.124 (ficticious example ip)... "Backslas
  
 
 The cron-hosts-deny.bash file is used for staging /etc/hosts.deny additions and creates a backup of hosts.deny for securing your IP address assetts.
-Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run crontab as root. sudo is required by journalctl.
+Enter cron entries as root as follows to update /etc/hosts.deny file every 30 seconds. This bash script needs to run crontab as root. sudo is required by journalctl and copy command.
  
     * * * * * /home/username/cron-hosts-deny.bash
     * * * * * sleep 30; /home/username/cron-hosts-deny.bash 
