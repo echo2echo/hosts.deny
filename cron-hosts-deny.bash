@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Change paths and filenames to your own settings
+# Change paths and filenames to your own preferences
+
 /home/username/deny/deny.pl > /home/username/deny/host-deny-ips.txt
 cp /home/username/deny/host-deny-ips.txt /etc/hosts.deny
 
