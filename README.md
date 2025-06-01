@@ -1,11 +1,21 @@
 # hosts.deny
 
 The deny.pl script creates a list of IP Addresses to block questionable ssh & ftp connections (and other services) based on log entries. IP blocking is activated upon entry of a record into the /etc/hosts.deny file. The Ubuntu and Debian based Linux distributions are supported.
-Google AI says Fedora, Mint and Arch Linux should also work having journalctl included in their OS and their use of TCP Wrappers.
+Google AI says Fedora, Mint and Arch Linux should also work having journalctl included with their OS and their use of TCP Wrappers.
 
 The requirements to run this script are a Linux distribution, Perl installed & journalctl, a log monitoring app.
 
 This script uses the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
+IPs are harvested from journalctl log entries on Linux.
+
+The systemd project (which includes journalctl) is licensed under the GNU Lesser General Public License version 2.1 (LGPLv2.1)
+
+Linux is a trademark of Linus Torvalds. 
+
+Perl is a copyright of Larry Wall and may be copied only under the terms of either the Artistic License or the GNU General Public License, which may be found in the Perl 5 source kit.
+
+The Perl script on this site, deny.pl, is Open Source Software, Copyleft.
+
 ### Before running these scripts make sure you put your home, work & any other needed public IP addresses in the /etc/hosts.allow file to allow you access to ssh and bypass hosts.deny on your server.
 It is very possible to get locked out of your server if your own IP addresses are not in the /etc/hosts.allow file.  Mobile phone IPs can be blocked on one failed attempt to login if an /etc/hosts.allow entry is not posted. Only one failed password attempt is allowed 
 before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  My suggested cron interval is 30 seconds to update hosts.deny. You could change the interval to 5 minutes or more. 
