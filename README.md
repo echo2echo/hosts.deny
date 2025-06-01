@@ -54,4 +54,4 @@ Linux is a trademark of Linus Torvalds.
 
 Perl is a Copyright of Larry Wall and may be copied only under the terms of either the Artistic License or the GNU General Public License, which may be found in the Perl 5 source kit.
 
-The Perl script on this site, deny.pl, is Open Source Software, Copyleft.
+The Perl script deny.pl, by echo2echo on GitHub.com, is Open Source Software, Copyleft.
