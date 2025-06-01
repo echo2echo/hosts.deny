@@ -6,7 +6,7 @@
 cp /home/username/deny/host-deny-ips.txt /etc/hosts.deny
 
 
-# Backup hosts.deny records
+# Backup hosts.deny file
 now=`date +"%Y-%m-%d"`
 now="backup-hosts-deny-${now}"
 cp /home/username/deny/host-deny-ips.txt /home/username/deny/${now}
