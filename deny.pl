@@ -31,8 +31,9 @@ foreach $item (@ip) {
 	if ($item =~ m/Invalid user .* from (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
 	if ($item =~ m/Received disconnect from (\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
-	
-	# if ($item =~ m/Failed password.*(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
+
+ 	# Commented below to avoid being accidentlally locked out 
+ 	# if ($item =~ m/Failed password.*(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 	
 	if ($item =~ m/invalid user\s+(\d+\.\d+\.\d+\.\d+)/) { push(@array, $1); }
 
