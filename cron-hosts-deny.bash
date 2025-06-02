@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Staging with deny.pl perl script to merge purge sort IP addresses to block
+# Staging with deny.pl perl script to merge purge & sort IP addresses to be blocked
 # Change paths and filenames to your own preferences 
 # Backups too, below.
 
