@@ -11,7 +11,7 @@ IPs are harvested from journalctl log entries on Linux...
 
 ### Before running these scripts make sure you put your home, work & any other needed public IP addresses in the /etc/hosts.allow file to allow you access to ssh and bypass hosts.deny on your server.
 It is very possible to get locked out of your server if your own IP addresses are not in the /etc/hosts.allow file.  Mobile phone IPs can be blocked on one failed attempt to login if an /etc/hosts.allow entry is not posted. Only one failed password attempt is allowed 
-before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  My suggested cron interval is 30 seconds to update hosts.deny. You could change the update nterval to 5 minutes or more to potentially give yourself a little more time to enter a hosts.allow record. 
+before an IP is entered in the hosts.deny file.  Yes, this script is unforgiving.  Maybe change cron entries to a longer period of time than is suggested below.  My suggested cron interval is 30 seconds to update hosts.deny. You could change the update interval to 5 minutes or more to potentially give yourself a little more time to enter a hosts.allow record. 
 
 Use the following example's syntax to enter your own /etc/hosts.allow & /etc/hosts.deny records one at a time...
 
