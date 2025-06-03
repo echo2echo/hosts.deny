@@ -4,7 +4,7 @@ The deny.pl script creates a list of IP Address records  to block questionable s
 The deny.pl perl script is used to merge, purge & sort IP addresses to be blocked.
 
 Ubuntu and Debian based Linux distributions are supported.
-The requirements to run this script are a Linux distribution with tcp wrapper, Perl installed & journalctl, a log monitoring app.
+The requirements to run this script are a Linux distribution with tcp wrapper, perl installed & journalctl, a log monitoring app.
 
 This script employs the /etc/hosts.deny file to block IP addresses.  An /etc/hosts.allow entry overrides /etc/hosts.deny and allows web traffic.
 IPs are harvested from journalctl log entries on Linux... 
