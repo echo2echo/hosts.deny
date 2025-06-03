@@ -1,6 +1,6 @@
 # hosts.deny
 
-The deny.pl script creates a list of IP Address records  to block questionable ssh & ftp connections ( among others ) based on log entries. IP blocking is activated upon entry of a record into the /etc/hosts.deny file.
+The deny.pl script creates a ulist of IP Address records  to block questionable ssh & ftp connections ( among others ) based on log entries. IP blocking is activated upon entry of a record into the /etc/hosts.deny file.
 The deny.pl perl script is used to merge, purge & sort IP addresses to be blocked.
 
 Ubuntu and Debian based Linux distributions are supported.
@@ -17,7 +17,7 @@ Use the following example's syntax to enter your own /etc/hosts.allow & /etc/hos
 
     ALL: 123.123.123.123
 
-See line 90 of deny.pl and change the IP Address to your home & work addresses.
+See line 93 of deny.pl and change the IP Address to your home & work addresses.
 Add the following additional line near bottom of deny.pl script to skip over adding your personal & work IPs to /etc/hosts.deny file.
 The code below references IP address 120.121.123.124 ( ficticious example IP )... "Backslash dot" used within IP address. 
 
